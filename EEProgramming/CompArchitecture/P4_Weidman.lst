@@ -1,0 +1,204 @@
+Marasm for MARC2 Version 1.4 (c) 2011 COL Gene Ressler
+Assembled 20:45:24 on Thursday 16-4-2015 from P4_Weidman.msm
+
+          Fields                ; NAME:    David Weidman
+          0DO12                 
+          1DOIm                 
+Addr Word 2 Af  Disassembly     
+                                ; SECTION: A1
+                                ; DATE:    02APR15
+                                
+                                ; EE375 Project 4 Shell Program for MARC2
+                                ; This shell code walks through each character in a data string.
+                                ; It takes a string (starting in memory at 0x0800), encrypts it one letter at 
+                                ; a time and stores that value in a new memory location (starting at 0x1000).
+                                ; The code then takes the encrypted data (starting at 0x1000) decrypts the data
+                                ; (one letter at a time) and stores the un-encrypted data in a new memory 
+                                ; location (starting at 0x2000).  It then loads the first three characters from
+                                ; the encrypted and decrypted locations back into the registers.
+                                
+                                ; Assembler directives ********************************************************
+                                limit 0xFFF
+=1000 (4096)                    encrypted equals 0x1000
+=2000 (8192)                    decrypted equals 0x2000
+                                
+                                ; Begin program: **************************************************************
+                                origin 0x0080
+                                encrypt_start:
+0080 0c92 01911 subx r1, r1, r1    ldi r1, data1           ;address of the first character in the data string
+0081 4f08 11708 sethi r1, 8     
+0082 4b00 11300 addi r1, 0      
+0083 14a4 02922 subx r2, r2, r2    ldi r2, encrypted       ;points to a RAM address to place encrypted info
+0084 5710 12710 sethi r2, 16    
+0085 5300 12300 addi r2, 0      
+                                   ;***you may wish to set variables here that will remain constant during the 
+                                   ;***encryption process for the entire data string:
+                                 
+                                 
+                                encrypt_loop: 	
+0086 1890 03110 ld r3, [r1]        ld r3, [r1]             ;fetches the (next) character
+                                
+0087 2090 04110 ld r4, [r1]        ld r4, [r1]             ;facilitates power function
+0088 63ff 143ff addi r4, -1        addi r4,-1              ;
+0089 2890 05110 ld r5, [r1]        ld r5, [r1]             ;facilitates power function
+008a 3090 06110 ld r6, [r1]        ld r6, [r1]             ;facilitates power function
+008b 73ff 163ff addi r6, -1        addi r6, -1              ;
+008c 3cfe 07977 subx r7, r7, r7    subx r7,r7,r7           ;
+008d 7b04 17304 addi r7, 4         addi r7, 4              ;constant "e" aka public key -1 used for exponentiation
+                                
+008e 1cb0 03930 subx r3, r3, r0    subx r3, r3, r0         ;check for a null character
+008f 4605 10605 bz 5               bz decrypt_start	      ;when zero, we are done reading and can now decrypt
+0090 8100 20100 call 0x0100        call encryptMult        ;jumps to function that encrypts
+0091 0026 00023 st [r2], r3        st [r2], r3             ;stores encrypted data to appropriate place
+0092 4b01 11301 addi r1, 1         addi r1, 1              ;moves source pointer to next char
+0093 5301 12301 addi r2, 1         addi r2, 1              ;moves destination pointer to next char
+0094 44f1 104f1 ba -15             ba encrypt_loop
+                                
+                                decrypt_start:  
+0095 0c92 01911 subx r1, r1, r1    ldi r1, encrypted       ;address of the first encrypted character
+0096 4f10 11710 sethi r1, 16    
+0097 4b00 11300 addi r1, 0      
+0098 14a4 02922 subx r2, r2, r2    ldi r2, decrypted       ;address of the location to place decrypted chars
+0099 5720 12720 sethi r2, 32    
+009a 5300 12300 addi r2, 0      
+                                   ;***you may wish to set variables here that will remain constant during the 
+                                   ;***decryption process for the entire data string:
+                                 
+                                 
+                                decrypt_loop:  	
+009b 1890 03110 ld r3, [r1]        ld r3, [r1]             ;fetches the (next) character   
+                                
+009c 2090 04110 ld r4, [r1]        ld r4, [r1]             ;facilitates power function
+009d 63ff 143ff addi r4, -1        addi r4,-1               ;
+009e 2890 05110 ld r5, [r1]        ld r5, [r1]             ;facilitates power function
+009f 3090 06110 ld r6, [r1]        ld r6, [r1]             ;facilitates power function
+00a0 73ff 163ff addi r6, -1        addi r6, -1             ;
+00a1 3cfe 07977 subx r7, r7, r7    subx r7,r7,r7           ;
+00a2 7b4c 1734c addi r7, 76        addi r7, 76             ;constant "d" aka private key -1 used for exponentiation
+                                
+00a3 1cb0 03930 subx r3, r3, r0    subx r3, r3, r0         ;check for a null character   
+00a4 4605 10605 bz 5               bz done                 ;when zero, we are done decrypting
+00a5 8400 20400 call 0x0400        call decryptMult        ;jumps to function that decrypts
+00a6 0026 00023 st [r2], r3        st [r2], r3             ;stores decrypted data to appropriate place
+00a7 4b01 11301 addi r1, 1         addi r1, 1              ;moves source pointer to next char
+00a8 5301 12301 addi r2, 1         addi r2, 1              ;moves destination pointer to next char
+00a9 44f1 104f1 ba -15             ba decrypt_loop
+                                
+                                done:	                   ;load values into registers to see on the FPGA
+00aa 0c92 01911 subx r1, r1, r1    ldi r1, encrypted       ;load RAM address of encrypted data
+00ab 4f10 11710 sethi r1, 16    
+00ac 4b00 11300 addi r1, 0      
+00ad 1090 02110 ld r2, [r1]        ld r2, [r1]             ;load first 3 encrypted words into registers
+00ae 4b01 11301 addi r1, 1         addi r1, 1
+00af 1890 03110 ld r3, [r1]        ld r3, [r1]
+00b0 4b01 11301 addi r1, 1         addi r1, 1
+00b1 2090 04110 ld r4, [r1]        ld r4, [r1]		
+00b2 0c92 01911 subx r1, r1, r1    ldi r1, decrypted	      ;load RAM address of decrypted data
+00b3 4f20 11720 sethi r1, 32    
+00b4 4b00 11300 addi r1, 0      
+00b5 2890 05110 ld r5, [r1]        ld r5, [r1]             ;load first 3 decrypted words into registers
+00b6 4b01 11301 addi r1, 1         addi r1, 1
+00b7 3090 06110 ld r6, [r1]        ld r6, [r1]
+00b8 4b01 11301 addi r1, 1         addi r1, 1
+00b9 3890 07110 ld r7, [r1]        ld r7, [r1]		
+00ba 4000 10000 hlt                hlt                     ;End of Program	
+                                   
+                                ; *****************************************************************************
+                                ; Your Subroutines ************************************************************
+                                ; *****************************************************************************
+                                ; R3 has the character to be encrypted or decrypted.  Change it and write the 
+                                ; new value back to R3.  When done, return from the subroutine call.
+                                
+                                origin 0x0100               
+                                encryptMult:               ;Your code to encrypt the character in r3 goes here
+0100 1b3a 03635 addx r3, r3, r5    addx r3, r3, r5		   ;	
+0101 63ff 143ff addi r4, -1        addi r4, -1             ;
+0102 4601 10601 bz 1               bz modN                 ;
+0103 44fc 104fc ba -4              ba encryptMult          ;
+                                
+                                modN:                      ;
+0104 5b89 13389 addi r3, -119      addi r3, -119           ;n=119
+0105 4501 10501 bn 1               bn finishMod            ;
+0106 44fd 104fd ba -3              ba modN                 ;
+                                
+                                finishMod:                 ;
+0107 5b77 13377 addi r3, 119       addi r3, 119             ;
+0108 234c 04646 addx r4, r4, r6    addx r4, r4, r6         ;
+0109 2cda 05955 subx r5, r5, r5    subx r5,r5,r5           ;
+010a 2b56 05653 addx r5, r5, r3    addx r5,r5, r3          ;
+010b 7bff 173ff addi r7, -1        addi r7,-1              ;
+010c 4601 10601 bz 1               bz finEnc               ;
+010d 44f2 104f2 ba -14             ba encryptMult          ;
+                                
+                                finEnc:                    ;
+010e 4100 10100 ret                ret
+                                		
+                                origin 0x0400
+                                decryptMult:               ;Your code to decrypt the character in r3 goes here
+0400 1b3a 03635 addx r3, r3, r5    addx r3, r3, r5         ;  
+0401 63ff 143ff addi r4, -1        addi r4, -1             ;
+0402 4601 10601 bz 1               bz modND                 ;
+0403 44fc 104fc ba -4              ba decryptMult          ;
+                                
+                                modND:                     ;
+0404 5b89 13389 addi r3, -119      addi r3, -119            ;n=119
+0405 4501 10501 bn 1               bn finishModD           ;
+0406 44fd 104fd ba -3              ba modND                ;
+                                
+                                finishModD:                 ;
+0407 5b77 13377 addi r3, 119       addi r3, 119             ;
+0408 234c 04646 addx r4, r4, r6    addx r4, r4, r6         ;
+0409 2cda 05955 subx r5, r5, r5    subx r5,r5,r5           ;
+040a 2b56 05653 addx r5, r5, r3    addx r5,r5, r3          ;
+040b 7bff 173ff addi r7, -1        addi r7,-1              ;
+040c 4601 10601 bz 1               bz finDec               ;
+040d 44f2 104f2 ba -14             ba decryptMult          ;
+                                
+                                finDec:                    ;
+040e 4100 10100 ret                ret                     ;
+                                
+                                ; Data: ***********************************************************************
+                                origin 0x0800               ;Use this provided test string  
+                                data1:	  
+0800 0054 0068 0069 0073           string "This --- is a (FAIRLY) short sentence 4 Y'all!?! ^_^"
+0804 0020 002d 002d 002d        
+0808 0020 0069 0073 0020        
+080c 0061 0020 0028 0046        
+0810 0041 0049 0052 004c        
+0814 0059 0029 0020 0073        
+0818 0068 006f 0072 0074        
+081c 0020 0073 0065 006e        
+0820 0074 0065 006e 0063        
+0824 0065 0020 0034 0020        
+0828 0059 0027 0061 006c        
+082c 006c 0021 003f 0021        
+0830 0020 005e 005f 005e        
+0834 0000                       data1end: word 0x0000       ;null character after string end
+                                
+                                
+                                ;You may create your own test strings in addition to the provided string.
+                                ;Place your test strings into ROM between 0x0840 and 0x0F00 and include a 
+                                ;a null character word after each test string as with the word at data1end.
+                                
+                                origin 0x0840
+0840 0041 0020 0053 0074        data2: string "A String"
+0844 0072 0069 006e 0067        
+0848 0000                       data2end: word 0x000
+                                
+                                ; do not place instructions or data after 0x0FFF (ROM limit)       
+
+------------------------------------------------------------------------------
+Symbol Table (alpha order)
+------------------------------------------------------------------------------
+                            data1 0800                           data1end 0834
+                            data2 0840                           data2end 0848
+                     decrypt_loop 009b                      decrypt_start 0095
+                        decrypted 2000                        decryptmult 0400
+                             done 00aa                       encrypt_loop 0086
+                    encrypt_start 0080                          encrypted 1000
+                      encryptmult 0100                             findec 040e
+                           finenc 010e                          finishmod 0107
+                       finishmodd 0407                               modn 0104
+                            modnd 0404
+------------------------------------------------------------------------------
+There are 19 symbols.

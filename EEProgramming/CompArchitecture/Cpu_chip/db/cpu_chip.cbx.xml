@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU_chip">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_chip|systemRAM:RAM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r4f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_chip|systemROM:ROM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_dea1.tdf"/>
+	</PROJECT>
+	<PROJECT NAME="cpu_chip">
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu_chip|systemRAM:RAM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_r4f1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu_chip|systemROM:ROM1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_88b1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

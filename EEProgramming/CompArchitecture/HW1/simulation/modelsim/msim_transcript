@@ -1,0 +1,52 @@
+# vsim +altera -do regFileSmall_run_msim_rtl_vhdl.do -l msim_transcript -gui work.regfilesmall_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.regfilesmall_vhd_tst(regfilesmall_arch)
+# Loading work.regfilesmall(behav)
+# Loading work.decode2x4(behav)
+# Loading work.reg8(behavior)
+# do regFileSmall_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/Users/x62865/Documents/EE375/HW1/simulation/modelsim/regFileSmTest.mpf
+# 
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity regFileSmall
+# -- Compiling architecture behav of regFileSmall
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/HW1/reg8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg8
+# -- Compiling architecture behavior of reg8
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decode2x4
+# -- Compiling architecture behav of decode2x4
+# 
+view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+add wave *
+# Can't move the Now cursor.
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R3we
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R2we
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R1we
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R0we
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R3data
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R2data
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R1data
+add wave -position end  sim:/regfilesmall_vhd_tst/i1/R0data
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/x62865/Documents/EE375/HW1/simulation/modelsim/wave.do
+run

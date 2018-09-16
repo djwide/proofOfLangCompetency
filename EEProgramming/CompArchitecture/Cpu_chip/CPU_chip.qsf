@@ -1,0 +1,102 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 14:40:26  February 17, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_chip_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY CPU_chip
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:40:26  FEBRUARY 17, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH CPU_chip_vhd_tst -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME CPU_chip_vhd_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id CPU_chip_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME CPU_chip_vhd_tst -section_id CPU_chip_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/CPU_chip_vhd_tst.vht -section_id CPU_chip_vhd_tst
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_M5 -to lcd_data[7]
+set_location_assignment PIN_M3 -to lcd_data[6]
+set_location_assignment PIN_K2 -to lcd_data[5]
+set_location_assignment PIN_K1 -to lcd_data[4]
+set_location_assignment PIN_K7 -to lcd_data[3]
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_L2 -to lcd_data[2]
+set_location_assignment PIN_L1 -to lcd_data[1]
+set_location_assignment PIN_L3 -to lcd_data[0]
+set_location_assignment PIN_L4 -to LCD_E
+set_location_assignment PIN_L5 -to LCD_ON
+set_location_assignment PIN_M2 -to LCD_RS
+set_location_assignment PIN_M1 -to LCD_RW
+set_location_assignment PIN_H15 -to prgmLED
+set_location_assignment PIN_AC27 -to reg_select[2]
+set_location_assignment PIN_E21 -to rstLED
+set_location_assignment PIN_AC28 -to reg_select[1]
+set_location_assignment PIN_AB28 -to reg_select[0]
+set_location_assignment PIN_M23 -to reset
+set_location_assignment PIN_Y23 -to run
+set_global_assignment -name VHDL_FILE ../Datapath/triStateBuffer.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/subtracter.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/regFile.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/reg16.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/OneBit.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/mux8_1.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/mux2_1.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/decoder3_8.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/datapath.vhdl
+set_global_assignment -name VHDL_FILE ../Datapath/complimenter.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/ALU.vhd
+set_global_assignment -name VHDL_FILE ../Datapath/adder.vhd
+set_global_assignment -name VHDL_FILE ../Cu1c/cu1c.vhd
+set_global_assignment -name VHDL_FILE CPU_chip.vhd
+set_global_assignment -name VHDL_FILE LCDdisplay.vhd
+set_global_assignment -name VHDL_FILE refreshcounter.vhd
+set_global_assignment -name VHDL_FILE systemRAM.vhd
+set_global_assignment -name QIP_FILE systemROM.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

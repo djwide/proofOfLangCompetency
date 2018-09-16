@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\x62865\Documents\EE375\HW1\simulation\modelsim
+Edecode2x4
+Z1 w1420680133
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\x62865\Documents\EE375\HW1\simulation\modelsim
+Z5 8C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd
+Z6 FC:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd
+l0
+L9
+V=fgJ;9V]9`5ezDaUCYON82
+!s100 D^dMURUUL^Lh;]bTPiRdO2
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1420683864.341000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd|
+Z10 !s107 C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Abehav
+R2
+R3
+DEx4 work 9 decode2x4 0 22 =fgJ;9V]9`5ezDaUCYON82
+l16
+L15
+VkaZd7HAQCXnYXZj^2T2Bn2
+!s100 cY][X_CD0dM5RhzJZNNWj3
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Ereg8
+Z13 w1420680116
+R2
+R3
+R4
+Z14 8C:/Users/x62865/Documents/EE375/HW1/reg8.vhd
+Z15 FC:/Users/x62865/Documents/EE375/HW1/reg8.vhd
+l0
+L9
+VHjjiOA29CTB;H:5V;2boL0
+R7
+31
+Z16 !s108 1420683864.045000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/HW1/reg8.vhd|
+Z18 !s107 C:/Users/x62865/Documents/EE375/HW1/reg8.vhd|
+R11
+R12
+!s100 [K_4U`4Kfe_P[B9Cl^XcW1
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 4 reg8 0 22 HjjiOA29CTB;H:5V;2boL0
+l17
+L15
+V]l:dAd_ZLU6aPPF=N@4:X3
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 E52[^eTmQ09g1Td1dJP=U0
+!i10b 1
+Eregfilesmall
+Z19 w1420680064
+R2
+R3
+R4
+Z20 8C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd
+Z21 FC:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd
+l0
+L9
+Vm56b::Z@m]EPGoCHg;^A=1
+R7
+31
+Z22 !s108 1420683863.632000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd|
+Z24 !s107 C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd|
+R11
+R12
+!s100 JPA7:3TWz:g2`YZf>4_5B2
+!i10b 1
+Abehav
+R2
+R3
+DEx4 work 12 regfilesmall 0 22 m56b::Z@m]EPGoCHg;^A=1
+l29
+L16
+VF5=CVZ7RIT_GSeh9BeEYH1
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 Wk_GT]AQkgLk[??j]7MA03
+!i10b 1

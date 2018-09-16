@@ -1,0 +1,100 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- ***************************************************************************
+-- This file contains a Vhdl test bench template that is freely editable to   
+-- suit user's needs .Comments are provided in each section to help the user  
+-- fill out necessary details.                                                
+-- ***************************************************************************
+-- Generated on "02/06/2015 08:15:21"
+                                                            
+-- Vhdl Test Bench template for design  :  cu1c
+-- 
+-- Simulation tool : ModelSim-Altera (VHDL)
+-- 
+
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY cu1c_vhd_tst IS
+END cu1c_vhd_tst;
+ARCHITECTURE cu1c_arch OF cu1c_vhd_tst IS
+-- constants                                                 
+-- signals                                                   
+SIGNAL clk : STD_LOGIC;
+SIGNAL const_out : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL ctl_wd : STD_LOGIC_VECTOR(14 DOWNTO 0);
+SIGNAL CU_addr_bus : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL CU_data_bus : STD_LOGIC_VECTOR(15 DOWNTO 0);
+SIGNAL ld_op : STD_LOGIC;
+SIGNAL Mem_rd : STD_LOGIC;
+SIGNAL Mem_wr : STD_LOGIC;
+SIGNAL N : STD_LOGIC;
+SIGNAL R_we : STD_LOGIC;
+SIGNAL rst : STD_LOGIC;
+SIGNAL run : STD_LOGIC;
+SIGNAL st_op : STD_LOGIC;
+SIGNAL Z : STD_LOGIC;
+COMPONENT cu1c
+	PORT (
+	clk : IN STD_LOGIC;
+	const_out : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	ctl_wd : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+	CU_addr_bus : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	CU_data_bus : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	ld_op : OUT STD_LOGIC;
+	Mem_rd : OUT STD_LOGIC;
+	Mem_wr : OUT STD_LOGIC;
+	N : IN STD_LOGIC;
+	R_we : OUT STD_LOGIC;
+	rst : IN STD_LOGIC;
+	run : IN STD_LOGIC;
+	st_op : OUT STD_LOGIC;
+	Z : IN STD_LOGIC
+	);
+END COMPONENT;
+BEGIN
+	i1 : cu1c
+	PORT MAP (
+-- list connections between master ports and signals
+	clk => clk,
+	const_out => const_out,
+	ctl_wd => ctl_wd,
+	CU_addr_bus => CU_addr_bus,
+	CU_data_bus => CU_data_bus,
+	ld_op => ld_op,
+	Mem_rd => Mem_rd,
+	Mem_wr => Mem_wr,
+	N => N,
+	R_we => R_we,
+	rst => rst,
+	run => run,
+	st_op => st_op,
+	Z => Z
+	);
+init : PROCESS                                               
+-- variable declarations                                     
+BEGIN                                                        
+        -- code that executes only once                      
+WAIT;                                                       
+END PROCESS init;                                           
+always : PROCESS                                              
+-- optional sensitivity list                                  
+-- (        )                                                 
+-- variable declarations                                      
+BEGIN                                                         
+        -- code executes for every event on sensitivity list  
+WAIT;                                                        
+END PROCESS always;                                          
+END cu1c_arch;

@@ -1,0 +1,147 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}{PARA 0 "
+> " 0 "" {MPLTEXT 1 0 27 "read(`c:/APPL/appl6a.txt`);" }}{PARA 0 "> " 
+0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%,PROCEDURES:
+G" }}{PARA 12 "" 1 "" {XPPMATH 20 "6P%3AllPermutations(n)G%6AllCombina
+tions(n,~k)G%+Benford(X)G%2BootstrapRV(Data)G%?CDF:CHF:HF:IDF:PDF:SF(X
+,~[x]))G%-CoefOfVar(X)G%2Convolution(X,~Y)G%5ConvolutionIID(X,~n)G%7Cr
+iticalPoint(X,~prob)G%4Determinant(MATRIX)G%1Difference(X,~Y)G%+Displa
+y(X)G%6ExpectedValue(X,~[g])G%<KSTest(X,~Data,~Parameters)G%,Kurtosis(
+X)G%.Maximum(X,~Y)G%1MaximumIID(X,~n)G%(Mean(X)G%'MGF(X)G%.Minimum(X,~
+Y)G%1MinimumIID(X,~n)G%?Mixture(MixParameters,~MixRVs)G%HMLE(X,~Data,~
+Parameters,~[Rightcensor])G%FMLENHPP(X,~Data,~Parameters,~obstime)G%@M
+LEWeibull(Data,~[Rightcensor])G%9MOM(X,~Data,~Parameters)G%@NextCombin
+ation(Previous,~size)G%:NextPermutation(Previous)G%;OrderStat(X,~n,~r,
+~[\"wo\"])G%;PlotDist(X,~[low],~[high])G%@PlotEmpCDF(Data,~[low],~[hig
+h])G%@PlotEmpCIF(Data,~[low],~[high])G%8PlotEmpSF(Data,~Censor)G%WPlot
+EmpVsFittedCDF(X,~Data,~Parameters,~[low],~[high])GFD%ZPlotEmpVsFitted
+SF(X,~Data,~Parameters,~Censor,~low,~high)G%<PPPlot(X,~Data,~Parameter
+s)G%.Product(X,~Y)G%1ProductIID(X,~n)G%<QQPlot(X,~Data,~Parameters)G%8
+RangeStat(X,~n,~[\"wo\"])G%,Skewness(X)G%0Transform(X,~g)G%7Truncate(X
+,~low,~high)G%,Variance(X)G%-VerifyPDF(X)G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%!G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%4Procedure~Nota
+tion:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%=X~and~Y~are~random~variabl
+esG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%QGreek~letters~are~numeric~or~
+symbolic~parametersG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9x~is~numeric
+~or~symbolicG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%Fn~and~r~are~positiv
+e~integers,~n~>=~rG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9low~and~high~
+are~numericG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%0g~is~a~functionG" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#%GBrackets~[]~denote~optional~paramete
+rsG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%I\"double~quotes\"~denote~char
+acter~stringsG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%LMATRIX~is~a~2~x~2~
+array~of~random~variablesG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%RA~capi
+talized~parameter~indicates~that~it~must~beG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%enentered~as~a~list~-->~ex.~Data~:=~[1,~12.4,~34,~52.4
+5,~63]G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%!G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%4Variate~Generation:G" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6(%:ArcTanVariate(alpha,~phi)G%9BinomialVariate(n,~p,~m)G%;Exponentia
+lVariate(lambda)G%9NormalVariate(mu,~sigma)G%1UniformVariate()G%AWeibu
+llVariate(lambda,~kappa,~m)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%!G" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#%+DATA~SETS:G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6)%,BallBearingG%4HorseKickFatalitiesG%*HurricaneG%$MP6G%
++RatControlG%-RatTreatmentG%,USSHalfBeakG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%!G" }}{PARA 12 "" 1 "" {XPPMATH 20 "6K%+ArcSinRV()G%5A
+rcTanRV(alpha,~phi)G%4BetaRV(alpha,~beta)G%3CauchyRV(a,~alpha)G%)ChiRV
+(n)G%/ChiSquareRV(n)G%4ErlangRV(lambda,~n)G%6ErrorRV(mu,~alpha,~d)G%6E
+xponentialRV(lambda)G%BExponentialPowerRV(lambda,~kappa)G%<ExtremeValu
+eRV(alpha,~beta)G%,FRV(n1,~n2)G%7GammaRV(lambda,~kappa)G%IGeneralizedP
+aretoRV(gamma,~delta,~kappa)G%9GompertzRV(delta,~kappa)G%5HyperbolicSe
+cantRV()G%9HyperExponentialRV(p,~l)G%5HypoExponentialRV(l)G%;IDBRV(gam
+ma,~delta,~kappa)G%>InverseGaussianRV(lambda,~mu)G%=InvertedGammaRV(al
+pha,~beta)G%(KSRV(n)G%8LaPlaceRV(omega,~theta)G%8LogGammaRV(alpha,~bet
+a)G%:LogisticRV(kappa,~lambda)G%=LogLogisticRV(lambda,~kappa)G%7LogNor
+malRV(mu,~sigma)G%7LomaxRV(kappa,~lambda)G%?MakehamRV(gamma,~delta,~ka
+ppa)G%.MuthRV(kappa)G%4NormalRV(mu,~sigma)G%8ParetoRV(lambda,~kappa)G%
+3RayleighRV(lambda)G%3StandardCauchyRV()G%3StandardNormalRV()G%8Standa
+rdTriangularRV(m)G%4StandardUniformRV()G%'TRV(n)G%6TriangularRV(a,~m,~
+b)G%0UniformRV(a,~b)G%9WeibullRV(lambda,~kappa)G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%!G" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 45 "-Truncation
+:      fN(n)= f0(n)/remaining area" }}{PARA 0 "" 0 "" {TEXT -1 37 "-Ma
+x:              FN(n)= Fx(n)*Fy(n)" }}{PARA 0 "" 0 "" {TEXT -1 38 "-Mi
+n:               SN(n)= Sx(n)*Sy(n)" }}{PARA 0 "" 0 "" {TEXT -1 59 "- \+
+Order Stats   fx(x)= n!/((i-1)(n-i)!)Fx^i-1 f(x) S(x)^n-i" }}{PARA 0 "
+" 0 "" {TEXT -1 23 "-transformation: y=g(x)" }}{PARA 0 "" 0 "" {TEXT 
+-1 60 "                        fy(y)= fx(g^-1(y))*abs(d/dy*g^-1(y))" }
+}{PARA 0 "" 0 "" {TEXT -1 52 "                        support is found
+ using graph" }}{PARA 0 "" 0 "" {TEXT -1 22 "-convolution:    Z=X+Y" }
+}{PARA 0 "" 0 "" {TEXT -1 62 "                       fZ(z) int(fx(x) f
+y(z-x) dx over support" }}{PARA 0 "" 0 "" {TEXT -1 15 "Products: V= XY
+" }}{PARA 0 "" 0 "" {TEXT -1 46 "                fx(x)fy(V/X)abs(1/x)d
+x support" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "DataSets();" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "BallBearing;" }}{PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#79$\"%)y\"
+!\"#$\"%#*GF&$\"%+LF&$\"%_TF&$\"%7UF&$\"%gXF&$\"%[[F&$\"%%=&F&$\"%'>&F
+&$\"%7aF&$\"%cbF&$\"%!y'F&$\"%koF&F=$\"%))oF&$\"%7%)F&$\"%7$*F&$\"%k)*
+F&$\"&70\"F&$\"&%e5F&$\"&#z7F&$\"&/G\"F&$\"&St\"F&" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 38 "RNG:=dummy->evalf(rand()/10000000000);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%$RNGGf*6#%&dummyG6\"6$%)operatorG%&a
+rrowGF(-%&evalfG6#,$*&#\"\"\"\",+++++\"F2-%%randGF(F2F2F(F(F(" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "IDF(Y,RNG());" }}{PARA 8 "" 
+1 "" {TEXT -1 96 "Error, invalid input: IDF expects its 1st argument, \+
+X, to be of type list(list), but received Y\n" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 126 "risklist:=[];\nn:= 3;\nfor i from 1 to n do\n  \+
+ newelement:=IDF(BetaRV(1,7),i/(n+1));\n   risklist:=[op(risklist),new
+element];\nod;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)risklistG7\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"nG\"\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%+newelementG$\"+@!Rk-%!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%)risklistG7#$\"+@!Rk-%!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%+newelementG$\"+uNjF%*!#6" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%)risklistG7$$\"+@!Rk-%!#6$\"+uNjF%*F(" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%+newelementG$\"+Skk'z\"!#5" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%)risklistG7%$\"+@!Rk-%!#6$\"+uNjF%*F($\"+Skk'z\"!#5" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "RiskStar:=BootstrapRV(ris
+klist);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)RiskStarG7%7%#\"\"\"\"\"
+$F'F'7%$\"+@!Rk-%!#6$\"+uNjF%*F-$\"+Skk'z\"!#57$Q)Discrete6\"Q$PDFF5" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 25 "X:=ExponentialRV(5/1000);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%\"XG7%7#f*6#%\"xG6\"6$%)operatorG%&arrowGF*,$*&#\"\"
+\"\"$+#F1-%$expG6#,$*&#F1F2F19$F1!\"\"F1F1F*F*F*7$\"\"!%)infinityG7$Q+
+ContinuousF*Q$PDFF*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 32 "xDif
+:= [[x->1/x],[0, infinity]];" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "xst
+ar:= Transform(X,xDif);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%xDifG7$7
+#f*6#%\"xG6\"6$%)operatorG%&arrowGF**&\"\"\"F/9$!\"\"F*F*F*7$\"\"!%)in
+finityG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&xstarG7%7#f*6#%#y|irG6\"
+6$%)operatorG%&arrowGF*,$*&#\"\"\"\"$+#F1*&-%$expG6#,$*&#F1F2F1*&F1F19
+$!\"\"F1F<F1F;!\"#F1F1F*F*F*7$\"\"!%)infinityG7$Q+ContinuousF*Q$PDFF*
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 117 "rewlist:=[];\nn:= 3;\n
+for i from 1 to n do\n   newelement:=IDF(xstar,i/(n+1));\n   rewlist:=
+[op(rewlist),newelement];\nod;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(r
+ewlistG7\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"nG\"\"$" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%+newelementG$\"+-wt1O!#7" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%(rewlistG7#$\"+-wt1O!#7" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%+newelementG$\"+/_Z8s!#7" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+(rewlistG7$$\"+-wt1O!#7$\"+/_Z8sF(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+>%+newelementG$\"+[(H!Q<!#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(rewl
+istG7%$\"+-wt1O!#7$\"+/_Z8sF($\"+[(H!Q<!#6" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 31 "rewStar:= BootstrapRV(rewlist);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%(rewStarG7%7%#\"\"\"\"\"$F'F'7%$\"+-wt1O!#7$\"+/_Z8
+sF-$\"+[(H!Q<!#67$Q)Discrete6\"Q$PDFF5" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 36 "ratStar:= Product(RiskStar,rewStar);" }}{PARA 12 "" 
+1 "" {XPPMATH 20 "6#>%(ratStarG7%7+#\"\"\"\"\"*F'F'F'F'F'F'F'F'7+$\"+-
+4B_9!#8$\"+/=Y/HF-$\"+^+I+MF-$\"+tA.!['F-$\"+-,g+oF-$\"+(zq!)*pF-$\"+b
+k+'H\"!#7$\"+g2bQ;F:$\"+f\\iAJF:7$Q)Discrete6\"Q$PDFFA" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "with(plots);" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#7Z%(animateG%*anim
+ate3dG%-animatecurveG%&arrowG%-changecoordsG%,complexplotG%.complexplo
+t3dG%*conformalG%,conformal3dG%,contourplotG%.contourplot3dG%*coordplo
+tG%,coordplot3dG%,densityplotG%(displayG%-dualaxisplotG%*fieldplotG%,f
+ieldplot3dG%)gradplotG%+gradplot3dG%-implicitplotG%/implicitplot3dG%(i
+nequalG%,interactiveG%2interactiveparamsG%.intersectplotG%-listcontplo
+tG%/listcontplot3dG%0listdensityplotG%)listplotG%+listplot3dG%+loglogp
+lotG%(logplotG%+matrixplotG%)multipleG%(odeplotG%'paretoG%,plotcompare
+G%*pointplotG%,pointplot3dG%*polarplotG%,polygonplotG%.polygonplot3dG%
+4polyhedra_supportedG%.polyhedraplotG%*rootlocusG%,semilogplotG%*setco
+lorsG%+setoptionsG%-setoptions3dG%+spacecurveG%1sparsematrixplotG%)sur
+fdataG%)textplotG%+textplot3dG%)tubeplotG" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 28 "display(PLotDist(CDF(P),0,2)" }}}}{MARK "0 1 0" 27 
+}{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

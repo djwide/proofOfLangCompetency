@@ -1,0 +1,140 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do datapath_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity datapath
+# -- Compiling architecture DPArch of datapath
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/regfile.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity regFile
+# -- Compiling architecture arc of regFile
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity decoder3_8
+# -- Compiling architecture arc of decoder3_8
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg16
+# -- Compiling architecture behavior of reg16
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux8_1
+# -- Compiling architecture arc of mux8_1
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture arc of ALU
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder
+# -- Compiling architecture func of adder
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/onebit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OneBit
+# -- Compiling architecture func of OneBit
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subtracter
+# -- Compiling architecture func of subtracter
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity complimenter
+# -- Compiling architecture func of complimenter
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2_1
+# -- Compiling architecture arc of mux2_1
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/tristatebuffer.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity triStateBuffer
+# -- Compiling architecture arc of triStateBuffer
+# 
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Datapath/simulation/modelsim/datapath.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath_vhd_tst
+# -- Compiling architecture datapath_arch of datapath_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  datapath_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps datapath_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.datapath_vhd_tst(datapath_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.datapath(dparch)
+# Loading work.regfile(arc)
+# Loading work.decoder3_8(arc)
+# Loading work.reg16(behavior)
+# Loading work.mux8_1(arc)
+# Loading work.alu(arc)
+# Loading work.adder(func)
+# Loading work.onebit(func)
+# Loading work.subtracter(func)
+# Loading work.complimenter(func)
+# Loading work.mux2_1(arc)
+# Loading work.tristatebuffer(arc)
+# ** Warning: (vsim-8683) Uninitialized out port /datapath_vhd_tst/i1/ALU1/subt/sxtra has no driver.
+# 
+# This port will contribute value (U) to the signal network.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.

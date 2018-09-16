@@ -1,0 +1,19 @@
+C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c_vhd_tst.vht {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c_vhd_tst.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CU1C_vhd_tst
+-- Compiling architecture tests of CU1C_vhd_tst
+
+} {} {}} C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity cu1c
+-- Compiling architecture behavior of cu1c
+
+} {} {}}

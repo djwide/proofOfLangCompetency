@@ -1,0 +1,690 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\x62865\Documents\EE375\Cpu_chip\simulation\modelsim
+Eadder
+Z1 w1422265258
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\x62865\Documents\EE375\Cpu_chip\simulation\modelsim
+Z5 8C:/Users/x62865/Documents/EE375/Datapath/adder.vhd
+Z6 FC:/Users/x62865/Documents/EE375/Datapath/adder.vhd
+l0
+L4
+V8kN[IR^:2jlB1_I<]4fEf0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1428213273.558000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/adder.vhd|
+Z10 !s107 C:/Users/x62865/Documents/EE375/Datapath/adder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 WPKP@I>TfFNM^`7iXFH1a1
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 5 adder 0 22 8kN[IR^:2jlB1_I<]4fEf0
+l19
+L11
+V0Tf?1B`>LmOGI`>HfJ=:30
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 >AEzL50WT_mjBPfCR;lF_1
+!i10b 1
+Ealu
+Z13 w1425866660
+R2
+R3
+R4
+Z14 8C:/Users/x62865/Documents/EE375/Datapath/ALU.vhd
+Z15 FC:/Users/x62865/Documents/EE375/Datapath/ALU.vhd
+l0
+L4
+VQD1Q?zaoil2hE6k;c^PE^1
+R7
+31
+Z16 !s108 1428213273.379000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/ALU.vhd|
+Z18 !s107 C:/Users/x62865/Documents/EE375/Datapath/ALU.vhd|
+R11
+R12
+!s100 9^0FCR31IaI4624@18Ai01
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 3 alu 0 22 QD1Q?zaoil2hE6k;c^PE^1
+l28
+L11
+VTmVIeLZMMmb><2DD5KfY80
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 [AH^H9Lm5o58434O7T?z41
+!i10b 1
+Ecomplimenter
+Z19 w1422265555
+R2
+R3
+R4
+Z20 8C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd
+Z21 FC:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd
+l0
+L4
+V:RedEN<jB2FcOnRIRmB=`3
+R7
+31
+Z22 !s108 1428213273.186000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd|
+Z24 !s107 C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd|
+R11
+R12
+!s100 kN0_HF1RVWQIa`m:@K9li3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 12 complimenter 0 22 :RedEN<jB2FcOnRIRmB=`3
+l11
+L10
+VXd^f]BLjkTA92G8S^bmI=2
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 D07Idz=ooMLV=@VTkTh@b3
+!i10b 1
+Ecpu
+Z25 w1425850425
+Z26 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z28 8C:/Users/x62865/Documents/EE375/Cpu_chip/cpu.vhd
+Z29 FC:/Users/x62865/Documents/EE375/Cpu_chip/cpu.vhd
+l0
+L5
+VG3lZhznc`eiUaPk1Vh2hG0
+R7
+31
+Z30 !s108 1428213274.786000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/cpu.vhd|
+Z32 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/cpu.vhd|
+R11
+R12
+!s100 j3>eh?M^Z]K1Ac<RR0S5H3
+!i10b 1
+Aarc
+R26
+R27
+R2
+R3
+DEx4 work 3 cpu 0 22 G3lZhznc`eiUaPk1Vh2hG0
+l45
+L15
+V7MiW=R5cDb3<HmeJfl9=43
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 D565]GP=H69^V1;@AS>H>0
+!i10b 1
+Ecpu_chip
+Z33 w1428062799
+R26
+R27
+R2
+R3
+R4
+Z34 8C:/Users/x62865/Documents/EE375/Cpu_chip/CPU_chip.vhd
+Z35 FC:/Users/x62865/Documents/EE375/Cpu_chip/CPU_chip.vhd
+l0
+L18
+Va3eYZT@b8E<PQ]C4zEN@T3
+R7
+31
+Z36 !s108 1428213273.990000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/CPU_chip.vhd|
+Z38 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/CPU_chip.vhd|
+R11
+R12
+!s100 L6S;:M2VnCkP9]X?MKQUc1
+!i10b 1
+Abehavioral
+R26
+R27
+R2
+R3
+DEx4 work 8 cpu_chip 0 22 a3eYZT@b8E<PQ]C4zEN@T3
+l71
+L31
+VRiijlDV6m=WZbOcJmS@K21
+R7
+31
+R36
+R37
+R38
+R11
+R12
+!s100 9Yj;;NVA7XBFn_Z;1VMf21
+!i10b 1
+Ecpu_chip_vhd_tst
+Z39 w1424203954
+R2
+R3
+R4
+Z40 8C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht
+Z41 FC:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht
+l0
+L10
+V1`>KzoDG;0;8SbjYlW:gn0
+!s100 U8YPoXi:b7XJ_i;h;8gL>3
+R7
+31
+!i10b 1
+Z42 !s108 1428213274.973000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht|
+Z44 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht|
+R11
+R12
+Atests
+R2
+R3
+DEx4 work 16 cpu_chip_vhd_tst 0 22 1`>KzoDG;0;8SbjYlW:gn0
+l28
+L13
+V^oh@]JFQYc7De@PN9^c8L1
+!s100 9GR_aWK]IgPIBo40A7z<01
+R7
+31
+!i10b 1
+R42
+R43
+R44
+R11
+R12
+Ecu1c
+Z45 w1428213134
+R26
+R27
+R2
+R3
+R4
+Z46 8C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd
+Z47 FC:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd
+l0
+L11
+V0KdjRX0S4be=VVh9TRb4g2
+R7
+31
+Z48 !s108 1428213273.818000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd|
+Z50 !s107 C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd|
+R11
+R12
+!s100 kJKcWR?9?ojVGA_Y`l[ZH0
+!i10b 1
+Abehavior
+R26
+R27
+R2
+R3
+DEx4 work 4 cu1c 0 22 0KdjRX0S4be=VVh9TRb4g2
+l35
+L20
+V2]3GF1;GCzCfC_>:I6L8L1
+R7
+31
+R48
+R49
+R50
+R11
+R12
+!s100 jm_jW@ePA2mSXzzZCZ]^81
+!i10b 1
+Edatapath
+Z51 w1423103055
+R26
+R27
+R2
+R3
+R4
+Z52 8C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl
+Z53 FC:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl
+l0
+L12
+VV9=:77B^YYnZ@BM:Bh1LU1
+R7
+31
+Z54 !s108 1428213272.973000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl|
+Z56 !s107 C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl|
+R11
+R12
+!s100 Q:cQz8P65CFaN_4b<Rb`>0
+!i10b 1
+Adparch
+R26
+R27
+R2
+R3
+DEx4 work 8 datapath 0 22 V9=:77B^YYnZ@BM:Bh1LU1
+l71
+L27
+VGo]LQBidzaKKAO]OM8?lD2
+R7
+31
+R54
+R55
+R56
+R11
+R12
+!s100 5BbP0K9M?Xh8=V1aE33K[1
+!i10b 1
+Edecoder3_8
+Z57 w1422241569
+R2
+R3
+R4
+Z58 8C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd
+Z59 FC:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd
+l0
+L4
+V?lB0Oe=1OQ1n9a61zX@gQ1
+R7
+31
+Z60 !s108 1428213272.768000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd|
+Z62 !s107 C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd|
+R11
+R12
+!s100 MoAIL?zNzF7[CJ6lzh0;71
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 10 decoder3_8 0 22 ?lB0Oe=1OQ1n9a61zX@gQ1
+l11
+L10
+VL]M9=4G=VFH5bYZ]C4VJn2
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 03NiGf1BMQU2o5LSbzM`]1
+!i10b 1
+Elcddisplay
+Z63 w1425851503
+R26
+R27
+R2
+R3
+R4
+Z64 8C:/Users/x62865/Documents/EE375/Cpu_chip/LCDdisplay.vhd
+Z65 FC:/Users/x62865/Documents/EE375/Cpu_chip/LCDdisplay.vhd
+l0
+L12
+VkKCVc`@AM`i8E^oI<^AEM3
+R7
+31
+Z66 !s108 1428213274.193000
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/LCDdisplay.vhd|
+Z68 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/LCDdisplay.vhd|
+R11
+R12
+!s100 mAKM][]WRlaRB4i7X@IM;1
+!i10b 1
+Adecription
+R26
+R27
+R2
+R3
+DEx4 work 10 lcddisplay 0 22 kKCVc`@AM`i8E^oI<^AEM3
+l30
+L20
+Vk^<EU8]XcaU3Ynjei6WCj3
+R7
+31
+R66
+R67
+R68
+R11
+R12
+!s100 TUNS53GoAA7DzelzO8_J?0
+!i10b 1
+Emux2_1
+Z69 w1422261982
+R2
+R3
+R4
+Z70 8C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd
+Z71 FC:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd
+l0
+L4
+Vhm5m[d9kz2;8WmOPGbU5?0
+R7
+31
+Z72 !s108 1428213272.545000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd|
+Z74 !s107 C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd|
+R11
+R12
+!s100 GImOi8QVn>C3]e?F2T>Re0
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 6 mux2_1 0 22 hm5m[d9kz2;8WmOPGbU5?0
+l11
+L10
+V>?N7QDNLnhiUBm0PH[81V2
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 R^E1nPX`9ZkU18QKSCDKb3
+!i10b 1
+Emux8_1
+Z75 w1422081416
+R2
+R3
+R4
+Z76 8C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd
+Z77 FC:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd
+l0
+L4
+VzW9XP<dDja?_HP?<7BJ@I3
+R7
+31
+Z78 !s108 1428213272.318000
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd|
+Z80 !s107 C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd|
+R11
+R12
+!s100 F?KIagd]:>72?iQ_K]oV]2
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 6 mux8_1 0 22 zW9XP<dDja?_HP?<7BJ@I3
+l11
+L10
+V^_2nmC4QHG5;?l]SZ=EPX0
+R7
+31
+R78
+R79
+R80
+R11
+R12
+!s100 [3`iV1IKlU=<I`lY<GbmU3
+!i10b 1
+Eonebit
+Z81 w1422263753
+R2
+R3
+R4
+Z82 8C:/Users/x62865/Documents/EE375/Datapath/OneBit.vhd
+Z83 FC:/Users/x62865/Documents/EE375/Datapath/OneBit.vhd
+l0
+L4
+V82Z3WSZNLilP?CU:HdCjG0
+R7
+31
+Z84 !s108 1428213272.171000
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/OneBit.vhd|
+Z86 !s107 C:/Users/x62865/Documents/EE375/Datapath/OneBit.vhd|
+R11
+R12
+!s100 lVTQD8fUb9AHOl^7>ionR3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 6 onebit 0 22 82Z3WSZNLilP?CU:HdCjG0
+l10
+L9
+VQ_BmI<7CZo8^>MdV`KLQ;1
+R7
+31
+R84
+R85
+R86
+R11
+R12
+!s100 S?91n]<@JNN?bde1VNRe23
+!i10b 1
+Ereg16
+Z87 w1421848365
+R2
+R3
+R4
+Z88 8C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd
+Z89 FC:/Users/x62865/Documents/EE375/Datapath/reg16.vhd
+l0
+L9
+VU@H16<cGUMAG_Na?QBbdG0
+R7
+31
+Z90 !s108 1428213272.027000
+Z91 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd|
+Z92 !s107 C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd|
+R11
+R12
+!s100 P77n?:WO3H0Z_nYKNAa[^1
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 5 reg16 0 22 U@H16<cGUMAG_Na?QBbdG0
+l17
+L15
+V=46:SJY=ibm<k<e1gk?7]1
+R7
+31
+R90
+R91
+R92
+R11
+R12
+!s100 21XlV4E?iD`U?efn3Dz1T0
+!i10b 1
+Eregfile
+Z93 w1422301903
+R2
+R3
+R4
+Z94 8C:/Users/x62865/Documents/EE375/Datapath/regFile.vhd
+Z95 FC:/Users/x62865/Documents/EE375/Datapath/regFile.vhd
+l0
+L4
+Vd`iIhKV_bRjHg[foB58n?3
+R7
+31
+Z96 !s108 1428213271.783000
+Z97 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/regFile.vhd|
+Z98 !s107 C:/Users/x62865/Documents/EE375/Datapath/regFile.vhd|
+R11
+R12
+!s100 BEaP;e>CkX_?loba<dmoU0
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 7 regfile 0 22 d`iIhKV_bRjHg[foB58n?3
+l39
+L17
+V[[HY8@Lcdm0?jGfAeL^o`1
+R7
+31
+R96
+R97
+R98
+R11
+R12
+!s100 H:0Aa;a2JS`:azzKOb;Wj3
+!i10b 1
+Esubtracter
+Z99 w1422265504
+R2
+R3
+R4
+Z100 8C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd
+Z101 FC:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd
+l0
+L4
+V^B;1KoX@ji;JHYEg>V2_31
+R7
+31
+Z102 !s108 1428213271.514000
+Z103 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd|
+Z104 !s107 C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd|
+R11
+R12
+!s100 kc5E7C[;?7IJSk1DUa7YB3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 10 subtracter 0 22 ^B;1KoX@ji;JHYEg>V2_31
+l26
+L11
+VPJMce1zVRZm@KGQI^5?Qf2
+R7
+31
+R102
+R103
+R104
+R11
+R12
+!s100 3AH5A=NVQ^C0@b@DME4Vi0
+!i10b 1
+Esystemram
+Z105 w1424202140
+R2
+R3
+R4
+Z106 8C:/Users/x62865/Documents/EE375/Cpu_chip/systemRAM.vhd
+Z107 FC:/Users/x62865/Documents/EE375/Cpu_chip/systemRAM.vhd
+l0
+L42
+V^iT[JP=N`UQMU?:zFnAYI0
+R7
+31
+Z108 !s108 1428213274.390000
+Z109 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/systemRAM.vhd|
+Z110 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/systemRAM.vhd|
+R11
+R12
+!s100 _9E_g<FWNji_h1z?G65o13
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 9 systemram 0 22 ^iT[JP=N`UQMU?:zFnAYI0
+l86
+L54
+VG]U71GIUF4Z54Gdkf_;<>0
+R7
+31
+R108
+R109
+R110
+R11
+R12
+!s100 ;6II=`nnP_klTmz9`8:3]2
+!i10b 1
+Esystemrom
+Z111 w1428202398
+R2
+R3
+R4
+Z112 8C:/Users/x62865/Documents/EE375/Cpu_chip/systemROM.vhd
+Z113 FC:/Users/x62865/Documents/EE375/Cpu_chip/systemROM.vhd
+l0
+L42
+VU2hSJN4eJ?:B@=A>mC<UC0
+R7
+31
+Z114 !s108 1428213274.566000
+Z115 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/systemROM.vhd|
+Z116 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/systemROM.vhd|
+R11
+R12
+!s100 Dk_H4HnjEA4Y_oLH5RF2[3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 9 systemrom 0 22 U2hSJN4eJ?:B@=A>mC<UC0
+l82
+L52
+VN1gTL6a;IR0=z`AOKd=gB0
+R7
+31
+R114
+R115
+R116
+R11
+R12
+!s100 C?5>HVJVL_f]Zi4Y[ia;<0
+!i10b 1
+Etristatebuffer
+Z117 w1423230584
+R2
+R3
+R4
+Z118 8C:/Users/x62865/Documents/EE375/Datapath/triStateBuffer.vhd
+Z119 FC:/Users/x62865/Documents/EE375/Datapath/triStateBuffer.vhd
+l0
+L5
+VW24Vb?RH]WfEmjCkB?;XR2
+R7
+31
+Z120 !s108 1428213271.232000
+Z121 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/triStateBuffer.vhd|
+Z122 !s107 C:/Users/x62865/Documents/EE375/Datapath/triStateBuffer.vhd|
+R11
+R12
+!s100 I6dn@zd5dQfG?REi2GJB41
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 14 tristatebuffer 0 22 W24Vb?RH]WfEmjCkB?;XR2
+l14
+L11
+V>HHLlD:<A=O^;dTEJYEQK0
+R7
+31
+R120
+R121
+R122
+R11
+R12
+!s100 he1oFX=k<Po7R@RaKc:LV1
+!i10b 1

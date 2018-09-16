@@ -1,0 +1,10 @@
+entity CPU is
+    Port( clk : in std_logic;
+          reset : in std_logic;    
+          run : in std_logic;
+          reg_select : in STD_LOGIC_VECTOR(2 downto 0);    
+          LCD_RS, LCD_E, LCD_ON, LCD_RW : out std_logic;   
+			 mem_wr,mem_rd: std_logic;
+          rstLED, prgmLED : out std_logic;                 
+          lcd_data : INOUT	STD_LOGIC_VECTOR(7 DOWNTO 0)); 
+end CPU_chip;

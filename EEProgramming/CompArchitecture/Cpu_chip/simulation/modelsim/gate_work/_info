@@ -1,0 +1,87 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\x62865\Documents\EE375\Cpu_chip\simulation\modelsim
+Ecpu_chip
+Z1 w1428211846
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 Pha:T]_MmzTJCYhSbeLPQ1
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 mVG;b;]=zAIVfAk:WJ`El1
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 Giz7C_dB_=WZS^1=3P8073
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 W]_:GkoiISnEn83KNb:3:2
+Z10 dC:\Users\x62865\Documents\EE375\Cpu_chip\simulation\modelsim
+Z11 8CPU_chip_7_1200mv_85c_slow.vho
+Z12 FCPU_chip_7_1200mv_85c_slow.vho
+l0
+L36
+VligEmNiTiiQXWQm]^<6o[1
+Z13 OV;C;10.1d;51
+31
+Z14 !s108 1428211898.878000
+Z15 !s90 -reportprogress|300|-93|-work|work|CPU_chip_7_1200mv_85c_slow.vho|
+Z16 !s107 CPU_chip_7_1200mv_85c_slow.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 0MJg^6d??z1@_[VjQ^=Ld3
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 8 cpu_chip 0 22 ligEmNiTiiQXWQm]^<6o[1
+l1558
+L75
+V;;4iWjP?8J@MPYzn6QM;a1
+R13
+31
+R14
+R15
+R16
+R17
+R18
+!s100 ionDzQA;N]U`>0gf<ddHz0
+!i10b 1
+Ecpu_chip_vhd_tst
+Z19 w1424203954
+R7
+R8
+R10
+Z20 8C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht
+Z21 FC:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht
+l0
+L10
+V1`>KzoDG;0;8SbjYlW:gn0
+!s100 U8YPoXi:b7XJ_i;h;8gL>3
+R13
+31
+!i10b 1
+Z22 !s108 1428211900.022000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht|
+Z24 !s107 C:/Users/x62865/Documents/EE375/Cpu_chip/simulation/modelsim/CPU_chip_vhd_tst.vht|
+R17
+R18
+Atests
+R7
+R8
+DEx4 work 16 cpu_chip_vhd_tst 0 22 1`>KzoDG;0;8SbjYlW:gn0
+l28
+L13
+V^oh@]JFQYc7De@PN9^c8L1
+!s100 9GR_aWK]IgPIBo40A7z<01
+R13
+31
+!i10b 1
+R22
+R23
+R24
+R17
+R18

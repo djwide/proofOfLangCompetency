@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+-- EE375 Control Unit Style FSM1C for MARC2 Processor
+-- Author:  *****Your name here!!*****
+-- Date:  
+-------------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+
+entity cu1c is
+  port( clk, rst, run, N, Z: IN std_logic;	
+        Mem_rd, Mem_wr, R_we, ld_op, st_op: OUT std_logic; 
+        ctl_wd: OUT std_logic_vector(14 downto 0); 
+        const_out: OUT  std_logic_vector(15 downto 0); 
+        CU_addr_bus: OUT std_logic_vector(15 downto 0);
+        CU_data_bus: INOUT std_logic_vector(15 downto 0));
+end cu1c;
+
+architecture behavior of cu1c is
+  -- Control Unit states for multi-cycle instruction execution
+  type states is (Reset, Fetch, Decode, Execute, Memory, WriteBack);
+  -- Instruction set operations
+  type operations is (call, sethi, bz, bn, ba, addi, ret, hlt, st, ld,
+                      sllx, srlx, notx, andx, addx, jmp, orx, subx, nop);
+  -- Declare your internal signals here
+  signal CurrState, NextState : states;
+  signal CurrOp, NextOp : operations;
+  signal CurrPC, CurrSP, CurrIR, CurrOffset : std_logic_vector(15 downto 0);
+  signal NextPC, NextSP, NextIR, NextOffset : std_logic_vector(15 downto 0);
+  signal CurrStatus, NextStatus : std_logic_vector(1 downto 0); --condition register
+  signal PCa_EN, SP_EN, PCd_EN : std_logic;				 	    --tristate enable bits 
+							
+begin
+  -- Wire tri-state buffers
+
+
+  -- Implement your Control Unit as a state machine with combined next state and
+  -- output logic but separate current state logic (state registers) 
+  CombLogic : process(CurrState, run, CurrPC, CurrSP, CurrIR, CurrOp, CurrStatus, 
+                      CurrOffset, cu_data_bus, N, Z)
+  begin
+  case CurrState is
+    when Reset =>   -------------------------RESET-------------------------
+      NextPC <= X"0080"; NextSP <= X"7FFE"; NextIR <= (others=>'0');
+      NextOffset <= (others=>'0'); NextStatus <= "00"; NextOp <= CurrOp;
+      mem_rd <= '1'; mem_wr <= '0';         
+      R_we <= '0'; ld_op <= '0'; st_op <= '0';  
+      ctl_wd <= (others=>'0'); const_out <= (others=>'0');
+      PCa_EN <= '1'; SP_EN <= '0'; PCd_EN <= '0';
+      if (run = '0' or CurrOp = hlt) then NextState <= Reset;  
+      else NextState <= Fetch; 
+      end if;
+
+    -- Put additional states here.  Be sure to assign every output signal in
+    -- every possible path so as to keep this as a combinational logic process
+    -- with no inferred latches.
+
+    end case;
+  end process CombLogic;			 
+
+  Regs : process(clk,rst)
+  begin
+  if rst='0' then CurrState<=Reset;  -- Active Low Reset
+    CurrOp <= sethi; CurrPC <= x"0080"; CurrSP <= x"7FFE"; 
+    CurrIR <= (others=>'0'); CurrOffset <= (others =>'0'); CurrStatus <= "00"; 
+  elsif (rising_edge(clk)) then CurrState <= NextState; 
+    CurrPC <= NextPC; CurrSP <= NextSP; CurrIR <= NextIR; 
+    CurrOp <= NextOp; CurrOffset <= NextOffset; CurrStatus <= NextStatus;
+  end if;
+  end process Regs;		
+end behavior;

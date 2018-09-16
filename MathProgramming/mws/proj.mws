@@ -1,0 +1,100 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" 0 11 
+1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }3 3 0 -1 -1 -1 
+0 0 0 0 0 0 -1 0 }{PSTYLE "" 11 12 1 {CSTYLE "" -1 -1 "" 0 1 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 }1 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart;" }}}{PARA 0 
+"> " 0 "" {MPLTEXT 1 0 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+27 "read(`c:/APPL/appl6a.txt`);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%,P
+ROCEDURES:G" }}{PARA 12 "" 1 "" {XPPMATH 20 "6P%3AllPermutations(n)G%6
+AllCombinations(n,~k)G%+Benford(X)G%2BootstrapRV(Data)G%?CDF:CHF:HF:ID
+F:PDF:SF(X,~[x]))G%-CoefOfVar(X)G%2Convolution(X,~Y)G%5ConvolutionIID(
+X,~n)G%7CriticalPoint(X,~prob)G%4Determinant(MATRIX)G%1Difference(X,~Y
+)G%+Display(X)G%6ExpectedValue(X,~[g])G%<KSTest(X,~Data,~Parameters)G%
+,Kurtosis(X)G%.Maximum(X,~Y)G%1MaximumIID(X,~n)G%(Mean(X)G%'MGF(X)G%.M
+inimum(X,~Y)G%1MinimumIID(X,~n)G%?Mixture(MixParameters,~MixRVs)G%HMLE
+(X,~Data,~Parameters,~[Rightcensor])G%FMLENHPP(X,~Data,~Parameters,~ob
+stime)G%@MLEWeibull(Data,~[Rightcensor])G%9MOM(X,~Data,~Parameters)G%@
+NextCombination(Previous,~size)G%:NextPermutation(Previous)G%;OrderSta
+t(X,~n,~r,~[\"wo\"])G%;PlotDist(X,~[low],~[high])G%@PlotEmpCDF(Data,~[
+low],~[high])G%@PlotEmpCIF(Data,~[low],~[high])G%8PlotEmpSF(Data,~Cens
+or)G%WPlotEmpVsFittedCDF(X,~Data,~Parameters,~[low],~[high])GFD%ZPlotE
+mpVsFittedSF(X,~Data,~Parameters,~Censor,~low,~high)G%<PPPlot(X,~Data,
+~Parameters)G%.Product(X,~Y)G%1ProductIID(X,~n)G%<QQPlot(X,~Data,~Para
+meters)G%8RangeStat(X,~n,~[\"wo\"])G%,Skewness(X)G%0Transform(X,~g)G%7
+Truncate(X,~low,~high)G%,Variance(X)G%-VerifyPDF(X)G" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#%!G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%4Procedure~N
+otation:G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%=X~and~Y~are~random~vari
+ablesG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%QGreek~letters~are~numeric~
+or~symbolic~parametersG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9x~is~nume
+ric~or~symbolicG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%Fn~and~r~are~posi
+tive~integers,~n~>=~rG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%9low~and~hi
+gh~are~numericG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%0g~is~a~functionG
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%GBrackets~[]~denote~optional~para
+metersG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%I\"double~quotes\"~denote~
+character~stringsG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%LMATRIX~is~a~2~
+x~2~array~of~random~variablesG" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%RA~
+capitalized~parameter~indicates~that~it~must~beG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%enentered~as~a~list~-->~ex.~Data~:=~[1,~12.4,~34,~52.4
+5,~63]G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%!G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%4Variate~Generation:G" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6(%:ArcTanVariate(alpha,~phi)G%9BinomialVariate(n,~p,~m)G%;Exponentia
+lVariate(lambda)G%9NormalVariate(mu,~sigma)G%1UniformVariate()G%AWeibu
+llVariate(lambda,~kappa,~m)G" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%!G" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#%+DATA~SETS:G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6)%,BallBearingG%4HorseKickFatalitiesG%*HurricaneG%$MP6G%
++RatControlG%-RatTreatmentG%,USSHalfBeakG" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%!G" }}{PARA 12 "" 1 "" {XPPMATH 20 "6K%+ArcSinRV()G%5A
+rcTanRV(alpha,~phi)G%4BetaRV(alpha,~beta)G%3CauchyRV(a,~alpha)G%)ChiRV
+(n)G%/ChiSquareRV(n)G%4ErlangRV(lambda,~n)G%6ErrorRV(mu,~alpha,~d)G%6E
+xponentialRV(lambda)G%BExponentialPowerRV(lambda,~kappa)G%<ExtremeValu
+eRV(alpha,~beta)G%,FRV(n1,~n2)G%7GammaRV(lambda,~kappa)G%IGeneralizedP
+aretoRV(gamma,~delta,~kappa)G%9GompertzRV(delta,~kappa)G%5HyperbolicSe
+cantRV()G%9HyperExponentialRV(p,~l)G%5HypoExponentialRV(l)G%;IDBRV(gam
+ma,~delta,~kappa)G%>InverseGaussianRV(lambda,~mu)G%=InvertedGammaRV(al
+pha,~beta)G%(KSRV(n)G%8LaPlaceRV(omega,~theta)G%8LogGammaRV(alpha,~bet
+a)G%:LogisticRV(kappa,~lambda)G%=LogLogisticRV(lambda,~kappa)G%7LogNor
+malRV(mu,~sigma)G%7LomaxRV(kappa,~lambda)G%?MakehamRV(gamma,~delta,~ka
+ppa)G%.MuthRV(kappa)G%4NormalRV(mu,~sigma)G%8ParetoRV(lambda,~kappa)G%
+3RayleighRV(lambda)G%3StandardCauchyRV()G%3StandardNormalRV()G%8Standa
+rdTriangularRV(m)G%4StandardUniformRV()G%'TRV(n)G%6TriangularRV(a,~m,~
+b)G%0UniformRV(a,~b)G%9WeibullRV(lambda,~kappa)G" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#%!G" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 998 "Poin
+tPlotRV := proc(m :: \{positive, symbol\})\nlocal ListOfLists, x:\nglo
+bal m1:\nm1 := m:\nif (nargs <> 1) then\n  print(`ERROR(StandardTriang
+ularRV): This procedure requires 1`):\n  print(`argument`):\n  RETURN(
+):\nfi:\nif (is(m1 <= 0) or is(m1 >= 1)) then\n  print(`ERROR: The par
+ameter m must be strictly between 0 and 1`):\n  RETURN():\nfi:\nif typ
+e(m1, infinity) then\n  print(`ERROR(StandardTriangularRV): The parame
+ter m must be finite`):\n  RETURN():\nfi:\nif type(m1, symbol) then\n \+
+ assume(m1, positive):\n  additionally(m1 < 1):\n  about(m1):\nfi:\n\n
+ListOfLists := [[unapply(2 * x / m1, x), unapply(2 * (1 - x) / (1 - m1
+),\n    x)], [0, m, 1], [\"Continuous\", \"PDF\"]]:\nRETURN(ListOfList
+s):\nend:\n\n#\n#  StandardUniform  (special case of Uniform)\n#\nStan
+dardUniformRV := proc()\nlocal ListOfLists, x:\nif (nargs <> 0) then\n
+  print(`ERROR(StandardUniformRV): This procedure requires no`):\n  pr
+int(`arguments`):\n  RETURN():\nfi:\n\nListOfLists := [[unapply(1, x)]
+, [0, 1], [\"Continuous\", \"PDF\"]]:\nRETURN(ListOfLists):\nend:" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 1084 "TriangularRV := proc(a, m,
+ b)\nlocal x,  ListOfLists:\nglobal a1, m1, b1:\na1 := a:\nm1 := m:\nb
+1 := b:\nif (nargs <> 3) then\n  print(`ERROR(TriangularRV): This proc
+edure requires 3 arguments`):\n  RETURN():\nfi:\nif (is(m1 <= a1)) the
+n\n  print(`ERROR(TriangularRV): First parameter must be less than the
+`):\n  print(`second parameter`):\n  RETURN():\nfi:\nif (is(b1 <= m1))
+ then\n  print(`ERROR(TriangularRV): Second parameter must be less tha
+n the`):\n  print(`third parameter`):\n  RETURN():\nfi:\nif (type(a1, \+
+infinity) or type(b1, infinity) or type(m1, infinity)) then\n  print(`
+ERROR(TriangularRV): Each parameter must be finite`):\n  RETURN():\nfi
+:\nif (type(a1, symbol) and type(m1, symbol)) then\n  assume(a1 < m1):
+\n  additionally(a1, numeric):\n  additionally(m1, numeric):\nfi:\nif \+
+(type(m1, symbol) and type(b1, symbol)) then\n  assume(m1 < b1):\n  ad
+ditionally(m1, numeric):\n  additionally(b1, numeric):\nfi:\n\nListOfL
+ists := [[unapply(2 * (x - a1) / ((b1 - a1) * (m1 - a1)), x),\n    una
+pply(2 * (b1 - x) / ((b1 - a1) * (b1 - m1)), x)],\n    [a, m, b], [\"C
+ontinuous\", \"PDF\"]]:\nRETURN(ListOfLists):\nend:" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "5 0 0" 0 }{VIEWOPTS 1 1 0 1 
+1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

@@ -1,0 +1,57 @@
+Marasm for MARC2 Version 1.4 (c) 2011 COL Gene Ressler
+Assembled 09:53:41 on Tuesday 17-2-2015 from P3prgm.msm
+
+          Fields                ;test program to test instructions of the MARC2 processor
+          0DO12                 
+          1DOIm                 
+Addr Word 2 Af  Disassembly     
+                                limit 0x1000
+                                origin	0x0080  			;main program starting at reset vector
+0080 4f01 11701 sethi r1, 1     		sethi	R1, 0x01	;R1 <= 0x0100
+0081 5718 12718 sethi r2, 24    		sethi	R2, 0x18	;R2 <= 0x1800
+0082 1b04 03602 addx r3, r0, r2 		addx  	R3, R0, R2	;R3 <= R0 + R2	   / R3 <= 0x1800		
+0083 5b01 13301 addi r3, 1      		addi	R3, 1		;R3 <= R3 + 1	   / R3 <= 0x1801
+0084 2120 04220 sllx r4, r2             sllx    R4, R2      ;R4 <= sll R2      / R4 <= 0x3000
+0085 0046 00043 st [r4], r3     		st	    [R4], R3	;M[R4] <= R3       / M[0x3000] <= 0x1801, to RAM
+0086 29a0 05320 srlx r5, r2     		srlx    R5, R2      ;R5 <= srl R2      / R5 <= 0x0C00
+0087 30d0 06150 ld r6, [r5]     		ld	    R6, [R5]	;R6 <= M[R5]       / R6 <= 0x000F, from ROM
+0088 342c 06826 orx r6, r2, r6  		orx	    R6, R2, R6	;R6 <= R2 or R6    / R6 <= 0x180F
+0089 3ca6 07923 subx r7, r2, r3 		subx    R7, R2, R3	;R7 <= R2 - R3     / R7 <= 0xFFFF
+008a 4501 10501 bn 1            		bn 	    dest1		;branch if negative to dest1
+008b 38c0 07140 ld r7, [r4]             ld      R7, [R4]    ;R7 <= M[R4]       / R7 <= 0x1801, won't happen
+                                
+008c 4401 10401 ba 1            dest1:  ba	    dest2		;branch always to dest2
+008d 0500 00a00 nop             		nop
+                                		
+008e 2a30 05430 notx r5, r3     dest2:  notx    R5, R3	    ;R5 <= not R3      / R5 <= 0xE7FE
+008f 0500 00a00 nop              		nop
+0090 006a 00065 st [r6], r5     		st      [R6], R5    ;M[R6] <= R5       / M[0x180F] <= 0xE7FE
+0091 0382 00701 jmp r1                  jmp     R1          ;PC <= R1          / PC <= 0x0100
+0092 0500 00a00 nop                     nop
+                                		
+                                origin	0x0100              ;jump location
+0100 2cda 05955 subx r5, r5, r5 		subx 	R5, R5, R5	;R5 <= R5 - R5	   / R5 <= 0x0000
+0101 4601 10601 bz 1            		bz	    dest3		;branch if zero to dest3		
+0102 0500 00a00 nop             		nop			
+                                				
+0103 81c0 201c0 call 0x01c0     dest3:  call    0x01C0	    ; PC<=0x01C0, M[SP]<=PC, SP<=SP-1
+                                					        ; M[0x7FFE] <= current PC
+                                					        ; SP <= 0x7FFD
+0104 0500 00a00 nop             	    nop		            ;allow a memory check for emulation at the end							
+0105 4000 10000 hlt             		hlt			        ;stop ops, go to reset
+                                
+                                origin 0x01C0				;function call destination address
+01c0 28c0 05140 ld r5, [r4]     		ld	R5, [R4]        ;R5 <= M[R4]       / R5 <= 0x1801, from RAM
+01c1 18e0 03160 ld r3, [r6]     		ld  R3, [R6]        ;R3 <= M[R6]       / R3 <= 0xE7FE, from RAM
+01c2 4100 10100 ret             		ret	                ;PC <= M[SP] 
+                                
+                                origin	0x0C00				;data for testing the load instruction
+0c00 000f                       		word 0x000F
+
+------------------------------------------------------------------------------
+Symbol Table (alpha order)
+------------------------------------------------------------------------------
+                            dest1 008c                              dest2 008e
+                            dest3 0103
+------------------------------------------------------------------------------
+There are 3 symbols.

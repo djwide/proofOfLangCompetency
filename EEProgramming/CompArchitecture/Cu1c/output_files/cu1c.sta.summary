@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.177
+TNS   : -230.767
+
+Type  : Slow 1200mV 85C Model Setup 'CurrIR[14]'
+Slack : -2.673
+TNS   : -25.729
+
+Type  : Slow 1200mV 85C Model Hold 'CurrIR[14]'
+Slack : -2.946
+TNS   : -26.353
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.651
+TNS   : -2.736
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -100.660
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CurrIR[14]'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.694
+TNS   : -205.997
+
+Type  : Slow 1200mV 0C Model Setup 'CurrIR[14]'
+Slack : -2.548
+TNS   : -24.891
+
+Type  : Slow 1200mV 0C Model Hold 'CurrIR[14]'
+Slack : -2.611
+TNS   : -22.680
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.573
+TNS   : -2.105
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -100.660
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CurrIR[14]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.587
+TNS   : -77.699
+
+Type  : Fast 1200mV 0C Model Setup 'CurrIR[14]'
+Slack : -1.082
+TNS   : -8.498
+
+Type  : Fast 1200mV 0C Model Hold 'CurrIR[14]'
+Slack : -1.643
+TNS   : -14.639
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.626
+TNS   : -10.613
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -83.358
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CurrIR[14]'
+Slack : 0.255
+TNS   : 0.000
+
+------------------------------------------------------------

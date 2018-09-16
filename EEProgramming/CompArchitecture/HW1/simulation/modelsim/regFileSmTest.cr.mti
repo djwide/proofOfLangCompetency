@@ -1,0 +1,33 @@
+C:/Users/x62865/Documents/EE375/HW1/reg8.vhd {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/HW1/reg8.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg8
+-- Compiling architecture behavior of reg8
+
+} {} {}} C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/HW1/decode2x4.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decode2x4
+-- Compiling architecture behav of decode2x4
+
+} {} {}} C:/Users/x62865/Documents/EE375/HW1/simulation/modelsim/regFileSmall_vhd_tst.vht {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/HW1/simulation/modelsim/regFileSmall_vhd_tst.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity regFileSmall_vhd_tst
+-- Compiling architecture regFileSmall_arch of regFileSmall_vhd_tst
+
+} {} {}} C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd {1 {vcom -work work -2002 -explicit C:/Users/x62865/Documents/EE375/HW1/regFileSmall.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity regFileSmall
+-- Compiling architecture behav of regFileSmall
+
+} {} {}}

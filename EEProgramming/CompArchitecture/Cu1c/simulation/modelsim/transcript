@@ -1,0 +1,1 @@
+vsim +altera -do cu1c_run_msim_rtl_vhdl.do -l msim_transcript -gui work.cu1c_vhd_tst

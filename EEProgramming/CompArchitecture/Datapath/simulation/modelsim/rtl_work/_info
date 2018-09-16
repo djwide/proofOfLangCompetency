@@ -1,0 +1,464 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\x62865\Documents\EE375\Datapath\simulation\modelsim
+Eadder
+Z1 w1422261658
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\x62865\Documents\EE375\Datapath\simulation\modelsim
+Z5 8C:/Users/x62865/Documents/EE375/Datapath/adder.vhd
+Z6 FC:/Users/x62865/Documents/EE375/Datapath/adder.vhd
+l0
+L4
+V8kN[IR^:2jlB1_I<]4fEf0
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1423226847.890000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/adder.vhd|
+Z10 !s107 C:/Users/x62865/Documents/EE375/Datapath/adder.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 WPKP@I>TfFNM^`7iXFH1a1
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 5 adder 0 22 8kN[IR^:2jlB1_I<]4fEf0
+l19
+L11
+V0Tf?1B`>LmOGI`>HfJ=:30
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 >AEzL50WT_mjBPfCR;lF_1
+!i10b 1
+Ealu
+Z13 w1422295798
+R2
+R3
+R4
+Z14 8C:/Users/x62865/Documents/EE375/Datapath/alu.vhd
+Z15 FC:/Users/x62865/Documents/EE375/Datapath/alu.vhd
+l0
+L4
+VQD1Q?zaoil2hE6k;c^PE^1
+R7
+31
+Z16 !s108 1423226847.674000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/alu.vhd|
+Z18 !s107 C:/Users/x62865/Documents/EE375/Datapath/alu.vhd|
+R11
+R12
+!s100 9^0FCR31IaI4624@18Ai01
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 3 alu 0 22 QD1Q?zaoil2hE6k;c^PE^1
+l28
+L11
+VTmVIeLZMMmb><2DD5KfY80
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 [AH^H9Lm5o58434O7T?z41
+!i10b 1
+Ecomplimenter
+Z19 w1422261955
+R2
+R3
+R4
+Z20 8C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd
+Z21 FC:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd
+l0
+L4
+V:RedEN<jB2FcOnRIRmB=`3
+R7
+31
+Z22 !s108 1423226848.461000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd|
+Z24 !s107 C:/Users/x62865/Documents/EE375/Datapath/complimenter.vhd|
+R11
+R12
+!s100 kN0_HF1RVWQIa`m:@K9li3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 12 complimenter 0 22 :RedEN<jB2FcOnRIRmB=`3
+l11
+L10
+VXd^f]BLjkTA92G8S^bmI=2
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 D07Idz=ooMLV=@VTkTh@b3
+!i10b 1
+Edatapath
+Z25 w1423099455
+Z26 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z28 8C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl
+Z29 FC:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl
+l0
+L12
+VV9=:77B^YYnZ@BM:Bh1LU1
+R7
+31
+Z30 !s108 1423226846.609000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl|
+Z32 !s107 C:/Users/x62865/Documents/EE375/Datapath/datapath.vhdl|
+R11
+R12
+!s100 Q:cQz8P65CFaN_4b<Rb`>0
+!i10b 1
+Adparch
+R26
+R27
+R2
+R3
+DEx4 work 8 datapath 0 22 V9=:77B^YYnZ@BM:Bh1LU1
+l71
+L27
+VGo]LQBidzaKKAO]OM8?lD2
+R7
+31
+R30
+R31
+R32
+R11
+R12
+!s100 5BbP0K9M?Xh8=V1aE33K[1
+!i10b 1
+Edatapath_vhd_tst
+Z33 w1423055637
+R2
+R3
+R4
+Z34 8C:/Users/x62865/Documents/EE375/Datapath/simulation/modelsim/datapath.vht
+Z35 FC:/Users/x62865/Documents/EE375/Datapath/simulation/modelsim/datapath.vht
+l0
+L28
+V@R3^O6C5?a4>NacDSlOK62
+!s100 lb?SN<]j?SgTU<iC4kT473
+R7
+31
+!i10b 1
+Z36 !s108 1423226849.059000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/simulation/modelsim/datapath.vht|
+Z38 !s107 C:/Users/x62865/Documents/EE375/Datapath/simulation/modelsim/datapath.vht|
+R11
+R12
+Adatapath_arch
+R2
+R3
+DEx4 work 16 datapath_vhd_tst 0 22 @R3^O6C5?a4>NacDSlOK62
+l76
+L30
+V:_B`RLS>Q^`05l[?Un9D42
+!s100 YAhRX8j_MR]]?8nWEzf^13
+R7
+31
+!i10b 1
+R36
+R37
+R38
+R11
+R12
+Edecoder3_8
+Z39 w1422237969
+R2
+R3
+R4
+Z40 8C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd
+Z41 FC:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd
+l0
+L4
+V?lB0Oe=1OQ1n9a61zX@gQ1
+R7
+31
+Z42 !s108 1423226847.134000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd|
+Z44 !s107 C:/Users/x62865/Documents/EE375/Datapath/decoder3_8.vhd|
+R11
+R12
+!s100 MoAIL?zNzF7[CJ6lzh0;71
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 10 decoder3_8 0 22 ?lB0Oe=1OQ1n9a61zX@gQ1
+l11
+L10
+VL]M9=4G=VFH5bYZ]C4VJn2
+R7
+31
+R42
+R43
+R44
+R11
+R12
+!s100 03NiGf1BMQU2o5LSbzM`]1
+!i10b 1
+Emux2_1
+Z45 w1422258382
+R2
+R3
+R4
+Z46 8C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd
+Z47 FC:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd
+l0
+L4
+Vhm5m[d9kz2;8WmOPGbU5?0
+R7
+31
+Z48 !s108 1423226848.642000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd|
+Z50 !s107 C:/Users/x62865/Documents/EE375/Datapath/mux2_1.vhd|
+R11
+R12
+!s100 GImOi8QVn>C3]e?F2T>Re0
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 6 mux2_1 0 22 hm5m[d9kz2;8WmOPGbU5?0
+l11
+L10
+V>?N7QDNLnhiUBm0PH[81V2
+R7
+31
+R48
+R49
+R50
+R11
+R12
+!s100 R^E1nPX`9ZkU18QKSCDKb3
+!i10b 1
+Emux8_1
+Z51 w1422077816
+R2
+R3
+R4
+Z52 8C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd
+Z53 FC:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd
+l0
+L4
+VzW9XP<dDja?_HP?<7BJ@I3
+R7
+31
+Z54 !s108 1423226847.515000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd|
+Z56 !s107 C:/Users/x62865/Documents/EE375/Datapath/mux8_1.vhd|
+R11
+R12
+!s100 F?KIagd]:>72?iQ_K]oV]2
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 6 mux8_1 0 22 zW9XP<dDja?_HP?<7BJ@I3
+l11
+L10
+V^_2nmC4QHG5;?l]SZ=EPX0
+R7
+31
+R54
+R55
+R56
+R11
+R12
+!s100 [3`iV1IKlU=<I`lY<GbmU3
+!i10b 1
+Eonebit
+Z57 w1422260153
+R2
+R3
+R4
+Z58 8C:/Users/x62865/Documents/EE375/Datapath/onebit.vhd
+Z59 FC:/Users/x62865/Documents/EE375/Datapath/onebit.vhd
+l0
+L4
+V82Z3WSZNLilP?CU:HdCjG0
+R7
+31
+Z60 !s108 1423226848.144000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/onebit.vhd|
+Z62 !s107 C:/Users/x62865/Documents/EE375/Datapath/onebit.vhd|
+R11
+R12
+!s100 lVTQD8fUb9AHOl^7>ionR3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 6 onebit 0 22 82Z3WSZNLilP?CU:HdCjG0
+l10
+L9
+VQ_BmI<7CZo8^>MdV`KLQ;1
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 S?91n]<@JNN?bde1VNRe23
+!i10b 1
+Ereg16
+Z63 w1421844765
+R2
+R3
+R4
+Z64 8C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd
+Z65 FC:/Users/x62865/Documents/EE375/Datapath/reg16.vhd
+l0
+L9
+VU@H16<cGUMAG_Na?QBbdG0
+R7
+31
+Z66 !s108 1423226847.347000
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd|
+Z68 !s107 C:/Users/x62865/Documents/EE375/Datapath/reg16.vhd|
+R11
+R12
+!s100 P77n?:WO3H0Z_nYKNAa[^1
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 5 reg16 0 22 U@H16<cGUMAG_Na?QBbdG0
+l17
+L15
+V=46:SJY=ibm<k<e1gk?7]1
+R7
+31
+R66
+R67
+R68
+R11
+R12
+!s100 21XlV4E?iD`U?efn3Dz1T0
+!i10b 1
+Eregfile
+Z69 w1422298303
+R2
+R3
+R4
+Z70 8C:/Users/x62865/Documents/EE375/Datapath/regfile.vhd
+Z71 FC:/Users/x62865/Documents/EE375/Datapath/regfile.vhd
+l0
+L4
+Vd`iIhKV_bRjHg[foB58n?3
+R7
+31
+Z72 !s108 1423226846.871000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/regfile.vhd|
+Z74 !s107 C:/Users/x62865/Documents/EE375/Datapath/regfile.vhd|
+R11
+R12
+!s100 BEaP;e>CkX_?loba<dmoU0
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 7 regfile 0 22 d`iIhKV_bRjHg[foB58n?3
+l39
+L17
+V[[HY8@Lcdm0?jGfAeL^o`1
+R7
+31
+R72
+R73
+R74
+R11
+R12
+!s100 H:0Aa;a2JS`:azzKOb;Wj3
+!i10b 1
+Esubtracter
+Z75 w1422261904
+R2
+R3
+R4
+Z76 8C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd
+Z77 FC:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd
+l0
+L4
+V^B;1KoX@ji;JHYEg>V2_31
+R7
+31
+Z78 !s108 1423226848.315000
+Z79 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd|
+Z80 !s107 C:/Users/x62865/Documents/EE375/Datapath/subtracter.vhd|
+R11
+R12
+!s100 kc5E7C[;?7IJSk1DUa7YB3
+!i10b 1
+Afunc
+R2
+R3
+DEx4 work 10 subtracter 0 22 ^B;1KoX@ji;JHYEg>V2_31
+l26
+L11
+VPJMce1zVRZm@KGQI^5?Qf2
+R7
+31
+R78
+R79
+R80
+R11
+R12
+!s100 3AH5A=NVQ^C0@b@DME4Vi0
+!i10b 1
+Etristatebuffer
+Z81 w1422237542
+R2
+R3
+R4
+Z82 8C:/Users/x62865/Documents/EE375/Datapath/tristatebuffer.vhd
+Z83 FC:/Users/x62865/Documents/EE375/Datapath/tristatebuffer.vhd
+l0
+L5
+VW24Vb?RH]WfEmjCkB?;XR2
+R7
+31
+Z84 !s108 1423226848.902000
+Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/x62865/Documents/EE375/Datapath/tristatebuffer.vhd|
+Z86 !s107 C:/Users/x62865/Documents/EE375/Datapath/tristatebuffer.vhd|
+R11
+R12
+!s100 I6dn@zd5dQfG?REi2GJB41
+!i10b 1
+Aarc
+R2
+R3
+DEx4 work 14 tristatebuffer 0 22 W24Vb?RH]WfEmjCkB?;XR2
+l14
+L11
+V>HHLlD:<A=O^;dTEJYEQK0
+R7
+31
+R84
+R85
+R86
+R11
+R12
+!s100 he1oFX=k<Po7R@RaKc:LV1
+!i10b 1

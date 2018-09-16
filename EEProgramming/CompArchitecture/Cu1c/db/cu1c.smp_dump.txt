@@ -1,0 +1,31 @@
+
+State Machine - |cu1c|CurrOp
+Name CurrOp.nop CurrOp.subx CurrOp.orx CurrOp.jmp CurrOp.addx CurrOp.andx CurrOp.notx CurrOp.srlx CurrOp.sllx CurrOp.ld CurrOp.st CurrOp.hlt CurrOp.ret CurrOp.addi CurrOp.ba CurrOp.bn CurrOp.bz CurrOp.call CurrOp.sethi 
+CurrOp.sethi 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+CurrOp.call 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+CurrOp.bz 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+CurrOp.bn 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+CurrOp.ba 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+CurrOp.addi 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+CurrOp.ret 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+CurrOp.hlt 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+CurrOp.st 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+CurrOp.ld 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+CurrOp.sllx 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+CurrOp.srlx 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.notx 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.andx 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.addx 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.jmp 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.orx 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.subx 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrOp.nop 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |cu1c|CurrState
+Name CurrState.WriteBack CurrState.Memory CurrState.Execute CurrState.Decode CurrState.Fetch CurrState.Reset 
+CurrState.Reset 0 0 0 0 0 0 
+CurrState.Fetch 0 0 0 0 1 1 
+CurrState.Decode 0 0 0 1 0 1 
+CurrState.Execute 0 0 1 0 0 1 
+CurrState.Memory 0 1 0 0 0 1 
+CurrState.WriteBack 1 0 0 0 0 1 

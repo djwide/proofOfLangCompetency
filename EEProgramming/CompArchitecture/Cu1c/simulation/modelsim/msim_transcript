@@ -1,0 +1,66 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do cu1c_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity cu1c
+# -- Compiling architecture behavior of cu1c
+# 
+# vcom -93 -work work {C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c_vhd_tst.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CU1C_vhd_tst
+# -- Compiling architecture tests of CU1C_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  cu1c_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=\"+acc\" -t 1ps cu1c_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cu1c_vhd_tst(tests)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.cu1c(behavior)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrState
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextState
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrOp
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextOp
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrPC
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrSP
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrIR
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrOffset
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextPC
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextSP
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextIR
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextOffset
+add wave -position end  sim:/cu1c_vhd_tst/dut/CurrStatus
+add wave -position end  sim:/cu1c_vhd_tst/dut/NextStatus
+add wave -position end  sim:/cu1c_vhd_tst/dut/PCa_EN
+add wave -position end  sim:/cu1c_vhd_tst/dut/SP_EN
+add wave -position end  sim:/cu1c_vhd_tst/dut/PCd_EN
+restart
+run

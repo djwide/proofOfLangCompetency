@@ -1,0 +1,6 @@
+# Compile of decode2x4.vhd was successful.
+# Compile of reg8.vhd was successful.
+# Compile of regFileSmall.vhd was successful.
+# Compile of regFileSmall_vhd_tst.vht was successful.
+# 4 compiles, 0 failed with no errors. 
+vsim +altera -do regFileSmall_run_msim_rtl_vhdl.do -l msim_transcript -gui work.regfilesmall_vhd_tst

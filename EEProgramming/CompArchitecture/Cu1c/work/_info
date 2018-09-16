@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Ecu1c
+Z0 w1423673496
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\x62865\Documents\EE375\Cu1c
+Z6 8C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd
+Z7 FC:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd
+l0
+L11
+V2^6_Gi_Y6VhjNF@efMZLJ0
+!s100 kJKcWR?9?ojVGA_Y`l[ZH0
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1423676495.714000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd|
+Z11 !s107 C:/Users/x62865/Documents/EE375/Cu1c/cu1c.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavior
+R1
+R2
+R3
+R4
+Z14 DEx4 work 4 cu1c 0 22 2^6_Gi_Y6VhjNF@efMZLJ0
+l35
+L20
+Z15 V]NZJ6RHaAm^[GR85A:E@j2
+Z16 !s100 [W9mb;DZ?bY6l>4hWDDBB0
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Ecu1c_vhd_tst
+Z17 w1423446150
+R3
+R4
+R5
+Z18 8C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c.vht
+Z19 FC:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c.vht
+l0
+L10
+VYY@Zf5olR@=]6EbKLiF`]3
+R8
+32
+Z20 !s108 1423676495.602000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c.vht|
+Z22 !s107 C:/Users/x62865/Documents/EE375/Cu1c/simulation/modelsim/cu1c.vht|
+R12
+R13
+!s100 cAAG:2;DR0zEDnU]0c:bQ0
+!i10b 1
+Atests
+R3
+R4
+DEx4 work 12 cu1c_vhd_tst 0 22 YY@Zf5olR@=]6EbKLiF`]3
+l31
+L13
+VX>3SzIf1N5_SlCG:<Y?:>2
+!s100 [S7IW63fl18C3a1dSb_L;0
+R8
+32
+R20
+R21
+R22
+R12
+R13
+!i10b 1
