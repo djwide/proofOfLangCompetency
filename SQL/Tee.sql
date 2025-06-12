@@ -1,3 +1,6 @@
+-- SQL example for coursework demonstration only.
+-- Not for production use.
+
 #Weidman x62865
 
 drop database if exists firefight;
