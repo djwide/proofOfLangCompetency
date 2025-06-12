@@ -1,3 +1,10 @@
+"""HeatMap example module.
+
+This code is a simplified demonstration of building a heat map from
+sensor readings. It was written for coursework and is not production
+ready. Use for learning purposes only.
+"""
+
 import math
 
 class HeatMap:

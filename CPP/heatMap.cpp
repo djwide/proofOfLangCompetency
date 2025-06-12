@@ -1,3 +1,6 @@
+// Example heat map prototype used in coursework.
+// This is not production ready and is provided for educational purposes only.
+
 #include <iostream>
 #include <math.h>
 
